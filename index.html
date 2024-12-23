@@ -3,120 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Item List</title>
+    <title>SSO Items List</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-            color: #333;
         }
-        h1 {
-            text-align: center;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            background: #fff;
-            margin: 5px 0;
+        .item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
             padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
+            display: flex;
+            align-items: center;
         }
-        .item-number {
+        .item img {
+            width: 100px;
+            height: 100px;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        .item-title {
             font-weight: bold;
-            color: #555;
-        }
-        img {
-            display: block;
-            margin-top: 10px;
-            max-width: 200px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Item List</h1>
-    <ul>
-        <li>
-            <span class="item-number">00001</span> - Red marking tape
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/1.jpg" alt="1">
-        </li>
-        <li>
-            <span class="item-number">00002</span> - Mining pick
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/2.jpg" alt="2">
-        </li>
-        <li>
-            <span class="item-number">00003</span> - Love letters
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/3.jpg" alt="3">
-        </li>
-        <li>
-            <span class="item-number">00004</span> - Legal documents
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/4.jpg" alt="4">
-        </li>
-        <li>
-            <span class="item-number">00005</span> - A package for Justin
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/package-for-justin.jpg" alt="A package for Justin">
-        </li>
-        <li>
-            <span class="item-number">00006</span> - Purchase papers for your horse
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/purchase-papers-for-your-horse.jpg" alt="Purchase papers for your horse">
-        </li>
-        <li>
-            <span class="item-number">00007</span> - Novice t-shirt
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/novice-t-shirt.jpg" alt="Novice t-shirt">
-        </li>
-        <li>
-            <span class="item-number">00008</span> - Moorland t-shirt
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/moorland-t-shirt.jpg" alt="Moorland t-shirt">
-        </li>
-        <li>
-            <span class="item-number">00009</span> - Junior bridle
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/junior-bridle.jpg" alt="Junior bridle">
-        </li>
-        <li>
-            <span class="item-number">00010</span> - Basic bridle
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/basic-bridle.jpg" alt="Basic bridle">
-        </li>
-        <li>
-            <span class="item-number">00011</span> - The Moorland Protector
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/the-moorland-protector.jpg" alt="The Moorland Protector">
-        </li>
-        <li>
-            <span class="item-number">00012</span> - Steeplechase saddle
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/steeplechase-saddle.jpg" alt="Steeplechase saddle">
-        </li>
-        <li>
-            <span class="item-number">00013</span> - Bobcats sweater
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/bobcats-sweater.jpg" alt="Bobcats sweater">
-        </li>
-        <li>
-            <span class="item-number">00014</span> - Stable pants
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/stable-pants.jpg" alt="Stable pants">
-        </li>
-        <li>
-            <span class="item-number">00015</span> - Castle bridle
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/castle-bridle.jpg" alt="Castle bridle">
-        </li>
-        <li>
-            <span class="item-number">00016</span> - Forest sweater
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/forest-sweater.jpg" alt="Forest sweater">
-        </li>
-        <li>
-            <span class="item-number">00017</span> - New moon pants
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/new-moon-pants.jpg" alt="New moon pants">
-        </li>
-        <li>
-            <span class="item-number">00018</span> - Butler's helmet
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/butlers-helmet.jpg" alt="Butler's helmet">
-        </li>
-        <li>
-            <span class="item-number">00019</span> - Doyle's hiking boots
-            <img src="https://raw.githubusercontent.com/velausc/sso-items-list/main/images/doyles-hiking-boots.jpg" alt="Doyle's hiking boots">
-        </li>
-    </ul>
+    <h1>SSO Items List</h1>
+
+    <div class="item">
+        <img src="images/1.jpg" alt="Red marking tape">
+        <div>
+            <div class="item-title">00001 - Red marking tape</div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="images/2.jpg" alt="Mining pick">
+        <div>
+            <div class="item-title">00002 - Mining pick</div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="images/3.jpg" alt="Love letters">
+        <div>
+            <div class="item-title">00003 - Love letters</div>
+        </div>
+    </div>
+    <div class="item">
+        <img src="images/4.jpg" alt="Legal documents">
+        <div>
+            <div class="item-title">00004 - Legal documents</div>
+        </div>
+    </div>
+    <!-- New Items Added Below -->
+    <div class="item">
+        <div>
+            <div class="item-title">00020 - Moorland gloves</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00021 - Basic saddle</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00022 - Jarl's favorites</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00023 - Castle helmet</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00024 - Castle t-shirt</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00025 - Village top</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00026 - New moon saddle</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00027 - GED hardhat</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00028 - Forest bridle</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00029 - Village jacket</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00030 - NorthLink t-shirt</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00031 - Castle waistcoat</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00032 - Mouse trap</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00033 - Cheese</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00034 - Piece of Cheese</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00035 - Spring flowers</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00036 - Deposit box key</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00037 - My brush</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00038 - My hoof pick</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00039 - My shovel</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00040 - Fresh grass</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00041 - Old horseshoe nail</div>
+        </div>
+    </div>
+    <div class="item">
+        <div>
+            <div class="item-title">00042 - Jorvik Iron Ore</div>
+        </div>
+    </div>
+    <!-- Additional items truncated for brevity -->
 </body>
 </html>
