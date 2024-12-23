@@ -1,81 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Stable Online Items Database</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            text-align: center;
+            background: linear-gradient(to bottom, #fef7fc, #eef2ff);
+            color: #4c4c4c;
         }
         header {
-            background-color: #ddd;
-            padding: 20px;
+            background: #ff69b4;
+            color: white;
+            padding: 20px 0;
         }
-        header h1 {
-            margin: 0;
-            color: #444;
-        }
-        .categories {
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
         }
-        .categories a {
+        .navbar a {
+            color: white;
             text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 1rem;
         }
-        .button {
-            background-color: #ff69b4;
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('/img/starstable-bg.jpg') no-repeat center center/cover;
+            color: white;
+            box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 30px;
+        }
+        .buttons-block {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .custom-itemselect-btn {
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
             color: white;
             border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 25px;
+            border-radius: 50px;
+            padding: 12px 25px;
+            margin: 10px;
+            font-size: 1rem;
+            font-weight: 600;
             cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
         }
-        .button:hover {
+        .custom-itemselect-btn:hover {
+            background: linear-gradient(135deg, #ff1493, #ff69b4);
             transform: scale(1.1);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
         }
         footer {
-            background-color: #ddd;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            color: #444;
+            background: #ff69b4;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+        footer a:hover {
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
     <header>
+        <div class="navbar">
+            <a href="/">Home</a>
+            <a href="/starstable/services/">SSO Services</a>
+            <a href="#">Items</a>
+        </div>
+    </header>
+
+    <section class="hero">
         <h1>Welcome to the Star Stable Online Items Database</h1>
         <p>Your one-stop solution for finding all quest items, collectibles, and more in Star Stable Online!</p>
-    </header>
-    <div class="categories">
-        <a href="helmets_corrected.html"><button class="button">Helmets</button></a>
-        <a href="explicit_tops.html"><button class="button">Tops</button></a>
-        <a href="gloves.html"><button class="button">Gloves</button></a>
-        <a href="pants.html"><button class="button">Pants</button></a>
-        <a href="shoes.html"><button class="button">Shoes</button></a>
-        <a href="saddle_pads.html"><button class="button">Saddle Pads</button></a>
-        <a href="bags.html"><button class="button">Bags</button></a>
-        <a href="pets.html"><button class="button">Pets</button></a>
-        <a href="hair_refined.html"><button class="button">Hair</button></a>
-        <a href="makeup.html"><button class="button">Makeup</button></a>
-        <a href="other.html"><button class="button">Other</button></a>
-        <a href="bridles.html"><button class="button">Bridles</button></a>
-        <a href="saddles_corrected.html"><button class="button">Saddles</button></a>
+    </section>
+
+    <div class="content">
+        <h2>Explore Our Categories</h2>
+        <div class="buttons-block">
+            <a href="helmets.html" class="custom-itemselect-btn">Helmets</a>
+            <a href="tops.html" class="custom-itemselect-btn">Tops</a>
+            <a href="gloves.html" class="custom-itemselect-btn">Gloves</a>
+            <a href="pants.html" class="custom-itemselect-btn">Pants</a>
+            <a href="shoes.html" class="custom-itemselect-btn">Shoes</a>
+            <a href="hair.html" class="custom-itemselect-btn">Hair</a>
+            <a href="makeup.html" class="custom-itemselect-btn">Makeup</a>
+            <a href="bridles.html" class="custom-itemselect-btn">Bridles</a>
+            <a href="saddles.html" class="custom-itemselect-btn">Saddles</a>
+            <a href="saddle_pads.html" class="custom-itemselect-btn">Saddle Pads</a>
+            <a href="bags.html" class="custom-itemselect-btn">Bags</a>
+            <a href="pets.html" class="custom-itemselect-btn">Pets</a>
+            <a href="other.html" class="custom-itemselect-btn">Other</a>
+            <a href="new_items.html" class="custom-itemselect-btn">New Items</a>
+        </div>
+
     </div>
+
     <footer>
-        &copy; 2024 Star Stable Online Items Database. All rights reserved.
+        <p>&copy; 2024 Star Stable Online Items Database. All rights reserved.</p>
+        <p><a href="license.html">License</a></p>
     </footer>
+
+    <script src="/vendor/jquery.min.js" type="text/javascript"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
