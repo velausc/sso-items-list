@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover all the items and collectibles in Star Stable Online, from helmets to pets.">
     <title>Star Stable Online Items Database</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -25,6 +27,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
         }
         .navbar a {
             color: white;
@@ -34,7 +37,8 @@
             font-size: 1rem;
         }
         .navbar a:hover {
-            text-decoration: underline;
+            color: #fff7e6;
+            text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
         }
         .hero {
             text-align: center;
@@ -72,6 +76,8 @@
             cursor: pointer;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
+            width: 90%;
+            max-width: 300px;
         }
         .custom-itemselect-btn:hover {
             background: linear-gradient(135deg, #ff1493, #ff69b4);
@@ -95,11 +101,11 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
+        <nav role="navigation" class="navbar">
             <a href="/">Home</a>
             <a href="/starstable/services/">SSO Services</a>
             <a href="#">Items</a>
-        </div>
+        </nav>
     </header>
 
     <section class="hero">
