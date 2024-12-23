@@ -15,6 +15,9 @@
             padding: 0;
             background: linear-gradient(to bottom, #fef7fc, #eef2ff);
             color: #4c4c4c;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
             background: #ff69b4;
@@ -61,7 +64,10 @@
             padding: 30px;
         }
         .buttons-block {
-            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
             margin: 30px 0;
         }
         .custom-itemselect-btn {
@@ -70,13 +76,13 @@
             border: none;
             border-radius: 50px;
             padding: 12px 25px;
-            margin: 10px;
             font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
-            width: 90%;
+            flex: 1 0 150px;
+            text-align: center;
             max-width: 300px;
         }
         .custom-itemselect-btn:hover {
@@ -89,6 +95,7 @@
             color: white;
             padding: 20px 0;
             text-align: center;
+            margin-top: auto;
         }
         footer a {
             color: white;
