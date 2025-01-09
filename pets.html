@@ -4,59 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Star Stable Items</title>
+    <title>Star Stable Online - Makeup</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #fce4ec;
             color: #333;
             margin: 0;
-            padding: 20px;
-        }
-        .item-list {
-            max-width: 800px;
-            margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #444;
-        }
-        .item {
+            padding: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            border-bottom: 1px solid #ddd;
-            padding: 10px 0;
         }
-        .item:last-child {
-            border-bottom: none;
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
         }
-        .item img {
-            width: 50px;
-            height: 50px;
-            margin-right: 20px;
-            border-radius: 4px;
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #e91e63;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 20px;
         }
-        .item p {
-            margin: 0;
+        .items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .item-card {
+            background: white;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .item-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
         }
         .item-id {
             font-weight: bold;
-            color: #555;
+            margin-bottom: 5px;
         }
         .item-name {
-            color: #777;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <div class="item-list">
-        <h1>Star Stable Items Database</h1>
+    <div class="header">
+        <h1>Star Stable Online - Makeup</h1>
+    </div>
+    <div class="container">
+        <div class="items">
 
-        <div class="item">
+        <div class="item-card">
             <img src="100x100sem/13649.jpg" alt="Equestrian Festival Punk Balloon" class="item-image" />
             <p class="item-id">[13649]</p>
             <p class="item-name">Equestrian Festival Punk Balloon</p>
