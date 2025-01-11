@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New</title>
+</head>
+<body>
+    
+
+    <title>New Items</title>
+    <style>
+        body {
+            font-family: Poppins, sans-serif;
+            background-color: #C49AC7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #935d96;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+        .item-card {
+            background: white;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .item-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .item-id {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .item-name {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>New Items</h1>
+    </div>
+    <div class="container">
+        <div class="items">
