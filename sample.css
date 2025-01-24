@@ -88,12 +88,8 @@ header a:hover {
     gap: 20px;
     padding: 0 20px;
     margin-bottom: 20px; 
+ grid-template-columns: repeat(8, 1fr); 
 }
-
-.items {
-    grid-template-columns: repeat(8, 1fr);
-}
-
 
 @media (max-width: 1200px) {
     .items {
@@ -101,17 +97,15 @@ header a:hover {
     }
 }
 
-
 @media (max-width: 768px) {
     .items {
         grid-template-columns: repeat(4, 1fr);
     }
 }
 
-
 @media (max-width: 480px) {
     .items {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 2fr;
     }
 }
 
