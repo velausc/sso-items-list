@@ -75,7 +75,7 @@ header a:hover {
     font-weight: normal;
     text-decoration: none;
     text-align: center;
-    width:70px
+    width:90px
 }
 
 .categories a:hover {
@@ -111,7 +111,8 @@ header a:hover {
     .categories {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 8px;
+        align-items: center;
     }
 }
 
