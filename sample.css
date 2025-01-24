@@ -25,7 +25,6 @@ header {
     padding: 10px 20px;
     color: #ffffff;
     width: 100%; 
-    text-indent: 10px
 }
 
 header a {
@@ -86,10 +85,34 @@ header a:hover {
 
 .items {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
     gap: 20px;
     padding: 0 20px;
     margin-bottom: 20px; 
+}
+
+.items {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+
+@media (max-width: 1200px) {
+    .items {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .items {
+        grid-template-columns: 2fr;
+    }
 }
 
 .item-card {
@@ -131,7 +154,7 @@ footer {
     font-family: 'Poppins', sans-serif;
     background-color: #563075;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     color: #ffffff;
     width: 100%; 
     margin-top: auto;
