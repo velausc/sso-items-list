@@ -107,6 +107,7 @@ header a:hover {
     .items {
         grid-template-columns: repeat(2, 1fr);
     }
+    
     .categories {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
