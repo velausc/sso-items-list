@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    font-family: 'Fugaz One', cursive;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+header {
+    background-color: #563075;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #ffffff;
+    width: 100%; 
+    text-indent: 10px
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+header a:hover {
+    color: #ffffff;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.content h1 {
+    font-family: 'Fugaz One', cursive;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.content p {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.categories a {
+    background-color: #ffffff;
+    color: #3e185e;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Fugaz One', cursive;
+    font-size: 1em;
+    font-weight: normal;
+    text-decoration: none;
+    text-align: center;
+    width:110px
+}
+
+.categories a:hover {
+    background-color: #3e185e;
+    color: #ffffff
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    margin-bottom: 20px; 
+}
+
+.item-card {
+    background-color: #1f1e1e;
+    border: 3px solid #3e185e;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    width: 160px; 
+    height: 250px; 
+    box-sizing: border-box;
+}
+
+.item-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.item-id {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.item-name {
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    background-color: #563075;
+    text-align: center;
+    padding: 5px;
+    color: #ffffff;
+    width: 100%; 
+    margin-top: auto;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}

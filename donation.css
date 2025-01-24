@@ -1,0 +1,81 @@
+body {
+    font-family: 'Fugaz One', cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    background-color: #563075;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+header div {
+    font-family: 'Fugaz One', cursive;
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    margin-top: -12vh;
+    z-index: 0;
+}
+
+h1 {
+    margin: 30px 0 20px 0;
+    font-style: normal;
+}
+
+h2 {
+    margin: 50px 0 20px 0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+p {
+    line-height: 1.6;
+    margin: 15px 0;
+    font-size: 19px;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #563075;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    font-size: smaller;
+}
