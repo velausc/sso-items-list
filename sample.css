@@ -30,7 +30,7 @@ header {
 header a {
     color: #ffffff;
     text-decoration: none;
-    margin: 10px;
+    margin: 0 15px;
 }
 
 header a:hover {
@@ -113,7 +113,6 @@ header a:hover {
         grid-template-columns: repeat(3, 1fr);
         gap: 8px;
         align-items: center;
-        column
     }
     
    header {
