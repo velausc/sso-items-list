@@ -113,6 +113,7 @@ header a:hover {
         grid-template-columns: repeat(3, 1fr);
         gap: 8px;
         align-items: center;
+        column
     }
     
     header {
@@ -123,6 +124,7 @@ header a:hover {
 
     header a {
         margin: 10px 0;
+        gap: 20px;
     }
 }
 
