@@ -39,6 +39,10 @@ header a:hover {
     .header-link {
         margin: 15px 0; 
     }
+    
+    footer {
+        position: static;
+    }
 }
 
 .container {
