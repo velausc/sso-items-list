@@ -9,6 +9,13 @@ body {
     align-items: center;
 }
 
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 0 10px; /* Add padding for mobile readability */
+    }
+}
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -25,6 +32,8 @@ header {
     padding: 10px 20px;
     color: #ffffff;
     width: 100%; 
+    flex-wrap: wrap;
+    gap: 15px; /* Added gap for spacing */
 }
 
 header a {
@@ -33,10 +42,28 @@ header a {
     margin: 0 15px;
 }
 
+
 header a:hover {
     color: #ffffff;
 }
 
+@media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center;
+      padding: 15px;
+    }
+  
+    header .menu {
+      flex-direction: column; /* Stack menu items */
+      gap: 10px;
+    }
+  
+    header a {
+      font-size: 0.9em; /* Adjust text size */
+    }
+  }
+  
 .content {
     text-align: center;
     padding: 20px;
@@ -61,6 +88,7 @@ header a:hover {
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensure buttons wrap for smaller screens */
 }
 
 .categories a {
@@ -75,12 +103,12 @@ header a:hover {
     font-weight: normal;
     text-decoration: none;
     text-align: center;
-    width:90px
+    width: 120px;
 }
 
 .categories a:hover {
     background-color: #3e185e;
-    color: #ffffff
+    color: #ffffff;
 }
 
 .items {
@@ -88,43 +116,7 @@ header a:hover {
     gap: 20px;
     padding: 0 20px;
     margin-bottom: 20px; 
- grid-template-columns: repeat(8, 1fr); 
-}
-
-@media (max-width: 1024px) {
-    .items {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
-
-@media (max-width: 768px) {
-    .items {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .items {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .categories {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
-        align-items: center;
-    }
-    
-   header {
-        flex-direction: column;
-        align-items: center;
-        font-size: 16px; 
-        padding: 15px;
-    }
-
-    header a {
-        margin: 15px 0; 
-    }
+    grid-template-columns: repeat(8, 1fr); 
 }
 
 .item-card {
@@ -136,11 +128,12 @@ header a:hover {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 5px;
+    padding: 10px; /* Increase padding for touch targets */
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    width: 160px; 
-    height: 250px; 
+    width: 100%; /* Adjust to container width */
+    max-width: 160px;
+    height: auto;
     box-sizing: border-box;
 }
 
@@ -159,7 +152,6 @@ header a:hover {
 .item-name {
     color: #ffffff;
     font-weight: bold;
-    
 }
 
 footer {
