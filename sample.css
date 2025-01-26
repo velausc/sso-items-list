@@ -31,7 +31,8 @@ header {
     font-size: 20px;
     padding: 10px 20px;
     color: #ffffff;
-    width: 100%; 
+    width: 100%;
+    text-indent: 10px;
     flex-wrap: wrap;
     gap: 15px; /* Added gap for spacing */
 }
