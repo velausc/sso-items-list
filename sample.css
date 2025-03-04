@@ -12,7 +12,8 @@ body {
 @media (max-width: 768px) {
     body {
         font-size: 14px;
-        padding: 0 10px; /* Add padding for mobile readability */
+        padding: 0 10px;
+        /* Add padding for mobile readability */
     }
 }
 
@@ -49,20 +50,23 @@ header a:hover {
 
 @media (max-width: 768px) {
     header {
-      flex-direction: column; /* Stack items vertically */
-      align-items: center;
-      padding: 15px;
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: center;
+        padding: 15px;
     }
-  
+
     header .menu {
-      flex-direction: column; /* Stack menu items */
-      gap: 10px;
+        flex-direction: column;
+        /* Stack menu items */
+        gap: 10px;
     }
-  
+
     header a {
-      font-size: 0.9em; /* Adjust text size */
+        font-size: 0.9em;
+        /* Adjust text size */
     }
-  }
+}
 
 .content {
     text-align: center;
@@ -88,7 +92,8 @@ header a:hover {
     justify-content: center;
     gap: 10px;
     margin-bottom: 20px;
-    flex-wrap: wrap; /* Ensure buttons wrap for smaller screens */
+    flex-wrap: wrap;
+    /* Ensure buttons wrap for smaller screens */
 }
 
 .categories a {
@@ -115,14 +120,16 @@ header a:hover {
     display: grid;
     gap: 20px;
     padding: 0 20px;
-    margin-bottom: 20px; 
-    grid-template-columns: repeat(8, 1fr); 
+    margin-bottom: 20px;
+    grid-template-columns: repeat(8, 1fr);
 }
 
 @media (max-width: 768px) {
     .items {
-        grid-template-columns: repeat(2, 1fr); /* Ensure only 2 items per row */
-        gap: 15px; /* Better spacing for smaller screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* Ensure only 2 items per row */
+        gap: 15px;
+        /* Better spacing for smaller screens */
     }
 }
 
@@ -131,24 +138,25 @@ header a:hover {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
-    
+
     .categories {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Center buttons and keep rows */
+        grid-template-columns: repeat(2, 1fr);
+        /* Center buttons and keep rows */
         gap: 10px;
         align-items: center;
         justify-content: center;
     }
-    
+
     header {
         flex-direction: column;
         align-items: center;
-        font-size: 16px; 
+        font-size: 16px;
         padding: 15px;
     }
 
     header a {
-        margin: 10px 0; 
+        margin: 10px 0;
     }
 }
 
@@ -161,10 +169,12 @@ header a:hover {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 10px; /* Increase padding for touch targets */
+    padding: 10px;
+    /* Increase padding for touch targets */
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    width: 100%; /* Adjust to container width */
+    width: 100%;
+    /* Adjust to container width */
     max-width: 160px;
     height: auto;
     box-sizing: border-box;
@@ -193,7 +203,7 @@ footer {
     text-align: center;
     padding: 10px;
     color: #ffffff;
-    width: 100%; 
+    width: 100%;
     margin-top: auto;
 }
 
