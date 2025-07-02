@@ -1,3 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 body {
     height: 100%;
     margin: 0;
@@ -146,12 +157,9 @@ footer {
     color: #ffffff;
     padding: 1px;
     text-align: center;
-    margin-top: auto;
-    position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 0;
     width: 100%;
+    margin-top: 30px; /* Space above the footer */
+    position: relative; /* No more fixed! */
 }
 
 footer p {
