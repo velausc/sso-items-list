@@ -147,10 +147,7 @@ footer {
     padding: 1px;
     text-align: center;
     margin-top: auto;
-    position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    position: sticky;
     width: 100%;
 }
 
