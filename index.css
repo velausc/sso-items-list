@@ -93,6 +93,7 @@ h2 {
 .new-items:hover {
     background-color: #8a04ac;
     color: #ffffff;
+    box-shadow: 0 0 10px #fff;
 }
 
 .new-items-view {
@@ -131,6 +132,7 @@ h2 {
 .category-btn:hover {
     background-color: #3e185e;
     color: #ffffff;
+    box-shadow: 0 0 8px #fff;
 }
 
 .special-gap {
