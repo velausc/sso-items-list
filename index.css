@@ -1,29 +1,45 @@
-body {
+/* ===== GLOBAL ===== */
+html, body {
     height: 100%;
+    overflow-x: hidden;
     margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Fugaz One', cursive;
-    background-color: black;
     color: #ffffff;
     text-align: center;
     font-size: 1rem;
-    flex-direction: column;
+
+    background-image: url('img/background/background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 @media (max-width: 768px) {
     body {
-        font-size: 14px;
+        background-attachment: scroll;
     }
 }
 
+main {
+    flex: 1;
+}
+
+/* ===== HEADER ===== */
 header {
-    background-color: #563075;
-    padding: 10px;
-    color: #ffffff;
+    background: linear-gradient(to bottom, #3B3273, transparent);
+    padding: 20px 10px;
     font-size: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
+    z-index: 1000;
 }
 
 header a {
@@ -36,54 +52,69 @@ header a:hover {
     text-decoration: underline;
 }
 
+header, header a {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        /* Stack items vertically */
-        align-items: center;
-        padding: 15px;
-    }
-
-    header .menu {
-        flex-direction: column;
-        /* Stack menu items */
         gap: 10px;
-    }
-
-    header a {
-        font-size: 0.9em;
-        /* Adjust text size */
     }
 }
 
+/* ===== CONTAINER / LOGO ===== */
 .container {
     margin: 20px auto;
     max-width: 800px;
 }
 
 .logo {
-    width: 300px;
+    max-height: 150px;
+    width: auto;
+    filter: drop-shadow(3px 3px 5px rgba(0,0,0,0.7));
+}
+
+.logo {
+    max-width: 100%;
     height: auto;
 }
 
+/* Mobile logo size */
+@media (max-width: 768px) {
+    .logo {
+        max-height: 80px; /* tweak: 80–100px */
+    }
+}
+
+/* ===== HEADINGS ===== */
 h1 {
-    font-size: 3em;
+    font-size: clamp(1.8rem, 6vw, 3rem);
     margin: 10px 0;
+    word-wrap: break-word;
+    text-align: center;
 }
 
 h2 {
-    font-size: 1em;
-    margin-bottom: 15px;
+    font-size: clamp(1rem, 4vw, 1.3rem);
     font-family: 'Poppins', sans-serif;
 }
 
+h1, h2 {
+    text-shadow: 4px 4px 7px rgba(0,0,0,0.8);
+}
+
+/* ===== NEW ITEMS ===== */
 .new-items {
-    background-color: #ffffff;
-    color: #8a04ac;
+    background-color: transparent;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
     padding: 5px;
     margin-bottom: 10px;
     font-size: 1.2em;
-    border: 3px solid #8a04ac;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgba(181, 108, 230, 0.8);
     border-radius: 15px;
     width: 350px;
     display: inline-block;
@@ -91,72 +122,105 @@ h2 {
 }
 
 .new-items:hover {
-    background-color: #8a04ac;
-    color: #ffffff;
+    background-color: rgb(120, 40, 120);
+    transform: scale(1.05);
+    opacity: 0.8;
 }
 
 .new-items-view {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding: 0 1rem;
     text-decoration: none;
 }
 
+/* ===== BUTTON GRID ===== */
 .buttons-block {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 65px;
-    row-gap: 10px;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-
-.category-btn {
-    background-color: #ffffff;
-    color: #3e185e;
-    padding: 12px;
-    border: 3px solid #3e185e;
-    border-radius: 15px;
-    font-size: 1.1em;
-    font-weight: normal;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    display: flex;
-    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* each button min 120px */
+    gap: 20px;
     justify-content: center;
-    gap: 15px;
-    text-decoration: none;
+    justify-items: center; /* 👈 THIS */
+    padding: 20px;
+    max-width: 600px; /* optional, keeps grid from stretching too wide */
+    margin: 0 auto; /* center the whole grid horizontally */
 }
 
-.category-btn:hover {
-    background-color: #3e185e;
-    color: #ffffff;
+.bgChg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    max-width: 140px;
+    padding: 0;
+    border: 3px solid rgba(181, 108, 230, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+    text-decoration: none; /* remove underline */
 }
 
-.special-gap {
-    margin-bottom: 20px;
+.bgChg img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px; /* tweak this */
+    object-fit: contain;
+    display: block;
 }
 
-main {
-    flex: 1;
+.bgChg:hover {
+    background-color: rgb(120, 40, 120);
+    transform: scale(1.05);
+    opacity: 0.8;
 }
 
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-row {
+    opacity: 0;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+/* Tablet + phones */
+@media (max-width: 768px) {
+    .buttons-block {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+/* Very small phones (optional safety) */
+@media (max-width: 360px) {
+    .buttons-block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ===== FOOTER ===== */
 footer {
-    background: #563075;
-    color: #ffffff;
-    padding: 1px;
+    background: linear-gradient(to top, #3B3273, transparent);
+    width: 100%;
+    padding: 10px 0;
     text-align: center;
     margin-top: auto;
-    position: fixed;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 footer p {
-    margin: 13px 0;
-    font-size: 1em;
+    margin: 10px 0;
+    font-size: 0.9em;
     font-family: 'Poppins', sans-serif;
 }
 

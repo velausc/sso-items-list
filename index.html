@@ -16,48 +16,148 @@
         <div>Star Stable Database ID</div>
         <nav>
             <a href="new.html" class="header-link">What's New?</a>
-            <a href="donation.html" class="header-link">Buy Us a Coffee!</a>
             <a href="license.html" class="header-link">License</a>
         </nav>
     </header>
 
+<!-- Place this inside <body> at the very top -->
+<div id="disclaimer-bar">
+  <p>This website is currently <strong>not updated</strong>. I may update it later.  
+  If anyone wants to take over and update it, DM me<strong> on discord</strong>.</p>
+  <span id="close-btn">&times;</span>
+</div>
+
+<style>
+/* ===== DISCLAIMER BAR ===== */
+#disclaimer-bar {
+    position: fixed;
+    top: -120px; /* hidden initially */
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.05); /* blurred-style background */
+    backdrop-filter: blur(8px);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    padding: 15px 50px 15px 20px; /* extra right padding for X */
+    z-index: 10000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+    border-bottom: 2px solid #94689D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-wrap: break-word; /* wrap long text */
+    box-sizing: border-box;
+}
+
+#disclaimer-bar p {
+    margin: 0;
+    flex: 1; /* take available space */
+}
+
+#close-btn {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    padding: 2px 6px;
+}
+
+</style>
+
+<script>
+window.addEventListener('load', () => {
+    const bar = document.getElementById('disclaimer-bar');
+    const closeBtn = document.getElementById('close-btn');
+
+    // Slide down the bar after page load
+    setTimeout(() => {
+        bar.style.top = '0';
+    }, 300);
+
+    // Close button hides the bar
+    closeBtn.addEventListener('click', () => {
+        bar.style.top = '-100px';
+    });
+});
+</script>
+
+
     <main>
         <div class="container">
             <h1><img src="logo.png" alt="Star Stable Database Logo" class="logo"></h1>
-            <h2>Discover all the IDs of items, quest collectables, and more in Star Stable Online!</h2>
+            <h2>Discover all the IDs of items, quest collectables and more in Star Stable Online!</h2>
 
             <div class="new-items-view">
                 <a href="new.html">
                     <div class="new-items">
-                        New Items!<br>Last update: 03/06/25
+                        New Items!<br>Last update: ---
                     </div>
                 </a>
             </div>
 
-            <div class="buttons-block">
-                <a href="helmets.html" button class="category-btn">Helmets</a>
-                <a href="bridles.html" button class="category-btn">Bridles</a>
-                <a href="tops.html" button class="category-btn">Tops</a>
-                <a href="saddles.html" button class="category-btn">Saddles</a>
-                <a href="gloves.html" button class="category-btn">Gloves</a>
-                <a href="saddle_pads.html" button class="category-btn">Saddle Pads</a>
-                <a href="pants.html" button class="category-btn">Pants</a>
-                <a href="decorations.html" button class="category-btn">Decorations</a>
-                <a href="shoes.html" button class="category-btn special-gap">Shoes</a>
-                <a href="leg_wraps.html" button class="category-btn special-gap">Legwraps</a>
-                <a href="hair.html" button class="category-btn">Hair</a>
-                <a href="bags.html" button class="category-btn">Bags</a>
-                <a href="makeup.html" button class="category-btn special-gap">Makeup</a>
-                <a href="pets.html" button class="category-btn special-gap">Pets</a>
-                <a href="accessories.html" button class="category-btn special-gap">Accessories</a>
-                <a href="other.html" button class="category-btn special-gap">Other</a>
+<div class="buttons-block">
+    <a href="helmets.html" class="bgChg">
+        <img src="img/icons/transparent_helmets.png" alt="Helmets">
+    </a>
+    <a href="bridles.html" class="bgChg">
+        <img src="img/icons/transparent_bridles.png" alt="Bridles">
+    </a>
+    <a href="tops.html" class="bgChg">
+        <img src="img/icons/transparent_tops.png" alt="Tops">
+    </a>
+    <a href="saddles.html" class="bgChg">
+        <img src="img/icons/transparent_saddles.png" alt="Saddles">
+    </a>
+    <a href="gloves.html" class="bgChg">
+        <img src="img/icons/transparent_gloves.png" alt="Gloves">
+    </a>
+    <a href="saddle_pads.html" class="bgChg">
+        <img src="img/icons/transparent_blankets.png" alt="Saddle Pads">
+    </a>
+    <a href="pants.html" class="bgChg">
+        <img src="img/icons/transparent_pants.png" alt="Pants">
+    </a>
+    <a href="decorations.html" class="bgChg">
+        <img src="img/icons/transparent_decorations.png" alt="Decorations">
+    </a>
+    <a href="shoes.html" class="bgChg">
+        <img src="img/icons/transparent_shoes.png" alt="Shoes">
+    </a>
+    <a href="leg_wraps.html" class="bgChg">
+        <img src="img/icons/transparent_legwraps.png" alt="Legwraps">
+    </a>
+    <a href="hair.html" class="bgChg">
+        <img src="img/icons/transparent_hair.png" alt="Hair">
+    </a>
+    <a href="bags.html" class="bgChg">
+        <img src="img/icons/transparent_saddlebags.png" alt="Bags">
+    </a>
+    <a href="makeup.html" class="bgChg">
+        <img src="img/icons/transparent_makeup.png" alt="Makeup">
+    </a>
+    <a href="pets.html" class="bgChg">
+        <img src="img/icons/transparent_pets.png" alt="Pets">
+    </a>
+    <a href="accessories.html" class="bgChg">
+        <img src="img/icons/transparent_accessory.png" alt="Accessories">
+    </a>
+    <a href="other.html" class="bgChg">
+        <img src="img/icons/transparent_horses.png" alt="Other">
+    </a>
+</div>
 
             </div>
         </div>
     </main>
 
     <footer>
-        <p>&copy; 2025 Star Stable Online ID Database</p>
+        <p>&copy; 2026 Star Stable Online ID Database</p>
         <p>All rights reserved.</p>
     </footer>
 </body>
