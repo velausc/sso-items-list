@@ -15,7 +15,7 @@ body {
     font-size: 1rem;
     min-height: 100vh;
     
-    background-image: url('img/background/background.jpg');
+    background-image: url('img/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
