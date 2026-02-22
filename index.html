@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tells the browser to cache for 1 hour (3600 seconds) -->
+    <meta http-equiv="Cache-Control" content="public, max-age=3600">
+    <script src="optimization.js" defer></script>
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -20,74 +23,6 @@
         </nav>
     </header>
 
-<!-- Place this inside <body> at the very top -->
-<div id="disclaimer-bar">
-  <p>This website is currently <strong>not updated</strong>. I may update it later.  
-  If anyone wants to take over and update it, DM me<strong> on discord</strong>.</p>
-  <span id="close-btn">&times;</span>
-</div>
-
-<style>
-/* ===== DISCLAIMER BAR ===== */
-#disclaimer-bar {
-    position: fixed;
-    top: -120px; /* hidden initially */
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.05); /* blurred-style background */
-    backdrop-filter: blur(8px);
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    padding: 15px 50px 15px 20px; /* extra right padding for X */
-    z-index: 10000;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-    border-bottom: 2px solid #94689D;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-wrap: break-word; /* wrap long text */
-    box-sizing: border-box;
-}
-
-#disclaimer-bar p {
-    margin: 0;
-    flex: 1; /* take available space */
-}
-
-#close-btn {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-    padding: 2px 6px;
-}
-
-</style>
-
-<script>
-window.addEventListener('load', () => {
-    const bar = document.getElementById('disclaimer-bar');
-    const closeBtn = document.getElementById('close-btn');
-
-    // Slide down the bar after page load
-    setTimeout(() => {
-        bar.style.top = '0';
-    }, 300);
-
-    // Close button hides the bar
-    closeBtn.addEventListener('click', () => {
-        bar.style.top = '-100px';
-    });
-});
-</script>
-
-
     <main>
         <div class="container">
             <h1><img src="logo.png" alt="Star Stable Database Logo" class="logo"></h1>
@@ -96,7 +31,7 @@ window.addEventListener('load', () => {
             <div class="new-items-view">
                 <a href="new.html">
                     <div class="new-items">
-                        New Items!<br>Last update: ---
+                        New Items!<br>Last update: 02/22/2026
                     </div>
                 </a>
             </div>
