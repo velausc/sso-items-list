@@ -346,10 +346,100 @@
 <img alt="Mississippi Mist makeup" class="item-image" src="100x100sem/17283.jpg"/>
 <p class="item-id">[17283]</p>
 <p class="item-name">Mississippi Mist makeup</p>
-</div></div>
+</div>
+<div class="item-card">
+<img alt="Makeup_62_Name" class="item-image" src="100x100sem/17763.jpg"/>
+<p class="item-id">[17763]</p>
+<p class="item-name">Makeup_62_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_63_Name" class="item-image" src="100x100sem/17855.jpg"/>
+<p class="item-id">[17855]</p>
+<p class="item-name">Makeup_63_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_64_Name" class="item-image" src="100x100sem/17856.jpg"/>
+<p class="item-id">[17856]</p>
+<p class="item-name">Makeup_64_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_65_Name" class="item-image" src="100x100sem/17857.jpg"/>
+<p class="item-id">[17857]</p>
+<p class="item-name">Makeup_65_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_66_Name" class="item-image" src="100x100sem/17858.jpg"/>
+<p class="item-id">[17858]</p>
+<p class="item-name">Makeup_66_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_67_Name" class="item-image" src="100x100sem/17859.jpg"/>
+<p class="item-id">[17859]</p>
+<p class="item-name">Makeup_67_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_68_Name" class="item-image" src="100x100sem/18459.jpg"/>
+<p class="item-id">[18459]</p>
+<p class="item-name">Makeup_68_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_69_Name" class="item-image" src="100x100sem/18510.jpg"/>
+<p class="item-id">[18510]</p>
+<p class="item-name">Makeup_69_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_70_Name" class="item-image" src="100x100sem/18511.jpg"/>
+<p class="item-id">[18511]</p>
+<p class="item-name">Makeup_70_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_71_Name" class="item-image" src="100x100sem/18512.jpg"/>
+<p class="item-id">[18512]</p>
+<p class="item-name">Makeup_71_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_72_Name" class="item-image" src="100x100sem/18513.jpg"/>
+<p class="item-id">[18513]</p>
+<p class="item-name">Makeup_72_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_73_Name" class="item-image" src="100x100sem/18514.jpg"/>
+<p class="item-id">[18514]</p>
+<p class="item-name">Makeup_73_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_74_Name" class="item-image" src="100x100sem/18515.jpg"/>
+<p class="item-id">[18515]</p>
+<p class="item-name">Makeup_74_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_75_Name" class="item-image" src="100x100sem/18516.jpg"/>
+<p class="item-id">[18516]</p>
+<p class="item-name">Makeup_75_Name</p>
+</div>
+<div class="item-card">
+<img alt="Makeup_76_Name" class="item-image" src="100x100sem/18517.jpg"/>
+<p class="item-id">[18517]</p>
+<p class="item-name">Makeup_76_Name</p>
+</div>
+</div>
 <footer>
 <p>© 2026 Star Stable Online ID Database</p>
 <p>All rights reserved.</p>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById(".items");
+    const cards = Array.from(container.querySelectorAll(".item-card"));
+
+    cards.sort((a, b) => {
+        const idA = parseInt(a.querySelector(".item-id").textContent.replace(/\D/g, ""));
+        const idB = parseInt(b.querySelector(".item-id").textContent.replace(/\D/g, ""));
+        return idA - idB;
+    });
+
+    cards.forEach(card => container.appendChild(card));
+});
+</script>
 </body>
 </html>

@@ -297,5 +297,19 @@
 <p>© 2026 Star Stable Online ID Database</p>
 <p>All rights reserved.</p>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const container = document.getElementById(".items");
+    const cards = Array.from(container.querySelectorAll(".item-card"));
+
+    cards.sort((a, b) => {
+        const idA = parseInt(a.querySelector(".item-id").textContent.replace(/\D/g, ""));
+        const idB = parseInt(b.querySelector(".item-id").textContent.replace(/\D/g, ""));
+        return idA - idB;
+    });
+
+    cards.forEach(card => container.appendChild(card));
+});
+</script>
 </body>
 </html>
