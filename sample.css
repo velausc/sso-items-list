@@ -92,6 +92,7 @@ header .menu {
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    text-align: center;
 }
 
 /* ===== CATEGORIES / BUTTONS ===== */
