@@ -1,6 +1,7 @@
 /* ===== GLOBAL ===== */
 html, body {
     height: 100%;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
 }
@@ -8,13 +9,11 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-family: 'Fugaz One', cursive;
     color: #ffffff;
     text-align: center;
     font-size: 1rem;
-    min-height: 100vh;
-    
+
     background-image: url('img/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -28,10 +27,7 @@ body {
     }
 }
 
-.main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main {
     flex: 1;
 }
 
