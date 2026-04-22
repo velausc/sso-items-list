@@ -1743,7 +1743,16 @@
 <p class="item-id">[18736]</p>
 <p class="item-name">Alan the Blue Whale</p>
 </div>
-
+<div class="item-card">
+<img alt="The Boinker" class="item-image" src="100x100sem/19000.jpg"/>
+<p class="item-id">[19000]</p>
+<p class="item-name">Backwoods tools</p>
+</div>
+<div class="item-card">
+<img alt="The Boinker" class="item-image" src="100x100sem/19012.jpg"/>
+<p class="item-id">[19012]</p>
+<p class="item-name">Outback tools</p>
+</div>
 </div>
 <footer>
 <p>© 2026 Star Stable Online ID Database</p>
@@ -1751,7 +1760,7 @@
 </footer>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const container = document.getElementById(".items");
+    const container = document.querySelector(".items");
     const cards = Array.from(container.querySelectorAll(".item-card"));
 
     cards.sort((a, b) => {
